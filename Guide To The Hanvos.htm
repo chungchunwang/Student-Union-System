@@ -1,0 +1,625 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Guide to SU System</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"DengXian Light";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@DengXian Light";}
+@font-face
+	{font-family:"\@DengXian";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:115%;
+	background:#4472C4;
+	border:none;
+	padding:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:white;
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:115%;
+	background:#D9E2F3;
+	border:none;
+	padding:0in;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	font-weight:normal;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-link:"Footnote Text Char";
+	margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	line-height:115%;
+	font-size:26.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#4472C4;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:25.0pt;
+	margin-left:0in;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+em
+	{color:#1F3763;
+	text-transform:uppercase;
+	letter-spacing:.25pt;
+	font-style:normal;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+span.MsoSubtleEmphasis
+	{color:#1F3763;
+	font-style:italic;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light",sans-serif;
+	color:#4472C4;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	color:#595959;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.FootnoteTextChar
+	{mso-style-name:"Footnote Text Char";
+	mso-style-link:"Footnote Text";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	color:white;
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	background:#4472C4;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	background:#D9E2F3;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoTitle>Guide To the SU Dashboard</p>
+
+<p class=MsoSubtitle>The definitive guide for how to navigate the system.</p>
+
+<p class=MsoNormal><span class=MsoSubtleEmphasis>By: Jason Wang</span></p>
+
+<p class=MsoNormal>This is the one stop shop tasks, events, and much more! Read
+this short guide to be able to use it effectively.</p>
+
+<p class=MsoNormal>The site exists at http://43.142.166.77:10000/.</p>
+
+<p class=MsoNormal>Before we dive into an explanation of each page, lets
+understand the different account types within the system. The SU Dashboard is a
+closed internal system. This means that it is meant for only members. Outsiders
+will not be able to see its content. </p>
+
+<p class=MsoNormal>For members, there are 3 different account types, in
+descending order of permission level:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Admin</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Power</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Basic</p>
+
+<p class=MsoNormal>Per design, Basic accounts should be assigned to regular
+members, Power accounts should be assigned to group leaders and subleaders, and
+Admin accounts should be given to SU leaders.</p>
+
+<p class=MsoNormal>Some features are only available for certain members. In the
+following documentation such features (or entire sections!) will be marked with<em>
+For Access level: _________ </em>to indicate this.</p>
+
+<p class=MsoNormal>Now, let’s take a look at what is in each page.</p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1>Home</h1>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=624
+height=360 id="Picture 1" src="Guide%20To%20The%20Hanvos_files/image001.jpg"></p>
+
+<p class=MsoNormal>This is the page you see when you login. Here, you will see
+a quick overview of your statistics, as well as a couple of quick access
+buttons. All of these though, are accessible from the top bar as well!</p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1>Admin Dashboard</h1>
+
+</div>
+
+<p class=MsoNormal><em>For Access level: admin only</em></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=623
+height=419 id="Picture 2" src="Guide%20To%20The%20Hanvos_files/image002.jpg"></p>
+
+<p class=MsoNormal>Here you will find a variety of tools to manage the system.
+Be careful though<a href="#_ftn1" name="_ftnref1" title=""><span
+class=MsoFootnoteReference><span class=MsoFootnoteReference><span
+style='font-size:10.0pt;line-height:115%;font-family:"Calibri",sans-serif'>[1]</span></span></span></a>,
+as you are free to change almost anything. These are a number of subpages for
+each of the tools.</p>
+
+<div style='border:solid #D9E2F3 3.0pt;padding:0in 0in 0in 0in;background:#D9E2F3'>
+
+<h2><span style='color:black'>Review Project Proposals</span></h2>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=624
+height=366 id="Picture 4" src="Guide%20To%20The%20Hanvos_files/image003.jpg"></p>
+
+<p class=MsoNormal>Here, administrators can review project proposals submitted
+by SU members. Click “View” to approve/disapprove and to make changes.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=624
+height=415 id="Picture 6" src="Guide%20To%20The%20Hanvos_files/image004.jpg"></p>
+
+<p class=MsoNormal>Here, submit a response that either approves the request
+with suggestions (you can include files as well), or deny it with a reason.</p>
+
+<div style='border:solid #D9E2F3 3.0pt;padding:0in 0in 0in 0in;background:#D9E2F3'>
+
+<h2><span style='color:black'>Review Absence</span></h2>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=623
+height=403 id="Picture 7" src="Guide%20To%20The%20Hanvos_files/image005.jpg"></p>
+
+<p class=MsoNormal>Members may have to be absent from certain events due to
+extraneous circumstances. In these situations, they will submit an absence
+request. On this page, administrators will be able to approve/disapprove absences.
+Click on view to make a verdict on an absence.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=624
+height=406 id="Picture 8" src="Guide%20To%20The%20Hanvos_files/image006.jpg"></p>
+
+<div style='border:solid #D9E2F3 3.0pt;padding:0in 0in 0in 0in;background:#D9E2F3'>
+
+<h2><span style='color:black'>Review Questions</span></h2>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=623
+height=368 id="Picture 10" src="Guide%20To%20The%20Hanvos_files/image007.png"></p>
+
+<p class=MsoNormal>All members are able to submit questions. On this page, you
+can respond to them. To do so, press view on a question.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=623
+height=393 id="Picture 11" src="Guide%20To%20The%20Hanvos_files/image008.png"></p>
+
+<p class=MsoNormal>Respond the question on this page, and then press Respond.</p>
+
+<div style='border:solid #D9E2F3 3.0pt;padding:0in 0in 0in 0in;background:#D9E2F3'>
+
+<h2><span style='color:black'>User Reference</span></h2>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=623
+height=400 id="Picture 12" src="Guide%20To%20The%20Hanvos_files/image009.png"></p>
+
+<p class=MsoNormal>Use this page to search though all users in the system.</p>
+
+<div style='border:solid #D9E2F3 3.0pt;padding:0in 0in 0in 0in;background:#D9E2F3'>
+
+<h2><a name="_Groups"></a><span style='color:black'>Groups</span></h2>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=624
+height=403 id="Picture 13" src="Guide%20To%20The%20Hanvos_files/image010.png"></p>
+
+<p class=MsoNormal>This is a powerful admin tool that allows you to access the
+group page of any of the groups in the system. You can make changes just as if
+you were a power user within the group. View the <a href="#_My_Groups">My Group</a>
+section for more information.</p>
+
+<div style='border:solid #D9E2F3 3.0pt;padding:0in 0in 0in 0in;background:#D9E2F3'>
+
+<h2><span style='color:black'>Create Awards</span></h2>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=624 height=399 id="Picture 14"
+src="Guide%20To%20The%20Hanvos_files/image011.png"></p>
+
+<p class=MsoNormal>On this page, you can grant awards to users. Press Create
+New to generate a new award.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=624 height=405 id="Picture 15"
+src="Guide%20To%20The%20Hanvos_files/image012.png"></p>
+
+<p class=MsoNormal>Here, fill in the relevant information and press Save to
+create the award. If you have a digital document for the award, add it in the
+files section. To see what an award in the system looks like, view the <a
+href="#_My_Awards">Awards</a> section.</p>
+
+<div style='border:solid #D9E2F3 3.0pt;padding:0in 0in 0in 0in;background:#D9E2F3'>
+
+<h2><span style='color:black'>Create Tasks</span></h2>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=624 height=410 id="Picture 16"
+src="Guide%20To%20The%20Hanvos_files/image013.png"></p>
+
+<p class=MsoNormal>On this page, you can arbitrarily create tasks and drop them
+into any group. It is recommended, however, that you instead create tasks using
+the <a href="#_Groups">Groups</a> feature of the Admin Dashboard.</p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1><a name="_My_Groups"></a>My Groups</h1>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=624 height=408 id="Picture 17"
+src="Guide%20To%20The%20Hanvos_files/image014.png"></p>
+
+<p class=MsoNormal>Here you will be able to access the group you are a part of.
+Click on the group to enter.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=623 height=404 id="Picture 18"
+src="Guide%20To%20The%20Hanvos_files/image015.png"></p>
+
+<p class=MsoNormal>On this page, you will see the members of your group as well
+as completed and pending tasks. </p>
+
+<p class=MsoNormal><em>For Access level: Power and Above</em></p>
+
+<p class=MsoNormal><b>Note: Do not use the Add Task Repeater button, it is
+still in beta and has known bugs. Do not enable the repeat task feature when
+creating tasks either. This should be resolved in a future update.</b></p>
+
+<p class=MsoNormal>Click the Add Tasks button to create a new task for group
+members.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=624 height=391 id="Picture 19"
+src="Guide%20To%20The%20Hanvos_files/image016.png"></p>
+
+<p class=MsoNormal>Most of the options on this page are self-explanatory, but
+there are a few special features on the bottom that you are able to set:</p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=617 height=316 id="Picture 20"
+src="Guide%20To%20The%20Hanvos_files/image017.png"></p>
+
+<p class=MsoNormal>Check the first box if the task you are creating has a set
+point value. </p>
+
+<p class=MsoNormal>Check the second box to automatically set the task as
+competed. This would be done for already completed tasks that were not
+previously inputted into the system. </p>
+
+<p class=MsoNormal><b><span style='color:red'>Do not check the third box. It
+has known errors, which will be resolved in a future update.</span></b></p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1>My Tasks</h1>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=625 height=346 id="Picture 3"
+src="Guide%20To%20The%20Hanvos_files/image018.png"></p>
+
+<p class=MsoNormal>This is a faster way to access the tasks from your group.
+Here you can see al list of all these tasks you need to do. Click View
+Completed Tasks to see all of the tasks you completed.</p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1>Profile</h1>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=624 height=358 id="Picture 5"
+src="Guide%20To%20The%20Hanvos_files/image019.png"></p>
+
+<p class=MsoNormal>Here users can create custom profile pages that are viewable
+to all members of the organization. Click Edit Page to make changes.</p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1><a name="_My_Awards"></a>Awards</h1>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=624 height=292 id="Picture 9"
+src="Guide%20To%20The%20Hanvos_files/image020.png"></p>
+
+<p class=MsoNormal>Here users can see award given to oneself. For here you can
+view the award and download it provided certificate document (if provided).</p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=624 height=386 id="Picture 21"
+src="Guide%20To%20The%20Hanvos_files/image021.png"></p>
+
+<p class=MsoNormal>This is the page you see when you open an award.</p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1>Leaderboard</h1>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=623 height=320 id="Picture 22"
+src="Guide%20To%20The%20Hanvos_files/image022.png"></p>
+
+<p class=MsoNormal>Here you can see global rankings of members of the
+organization based on points. You can filter by quarter or all.</p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1>My Project Proposals</h1>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=625 height=288 id="Picture 23"
+src="Guide%20To%20The%20Hanvos_files/image023.png"></p>
+
+<p class=MsoNormal>Here you can manage and create project proposals. Click on
+Create New to do so.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=624 height=404 id="Picture 24"
+src="Guide%20To%20The%20Hanvos_files/image024.png"></p>
+
+<p class=MsoNormal>Fill in the relevant information and then Save.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=624 height=384 id="Picture 25"
+src="Guide%20To%20The%20Hanvos_files/image025.png"></p>
+
+<p class=MsoNormal>You can check on your proposal by clicking View. Here you
+will see a list of all of the information relating to the request. Check the
+status of our proposal by viewing the approval section at the very bottom. If
+your proposal has been reviewed comments will show up in the Feedback/Feedback
+Files sections.</p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1><span class=MsoSubtleEmphasis><span style='color:white;font-style:normal'>Report</span></span></h1>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+class=MsoSubtleEmphasis><span style='color:windowtext;font-style:normal'><img
+border=0 width=623 height=380 id="Picture 26"
+src="Guide%20To%20The%20Hanvos_files/image026.png"></span></span></p>
+
+<p class=MsoNormal><span class=MsoSubtleEmphasis><span style='color:windowtext;
+font-style:normal'>Here you can see a report of all the work you have done in
+the organization. You can filter this report by different time frames. To print
+the page, follow the instructions at the top of the page.</span></span></p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1><span class=MsoSubtleEmphasis><span style='color:white;font-style:normal'>My
+Events</span></span></h1>
+
+</div>
+
+<p class=MsoNormal><em>For Access level: Power and Above</em></p>
+
+<p class=MsoNormal><span class=MsoSubtleEmphasis><span style='color:windowtext;
+font-style:normal'>Documentation is still a work in progress.</span></span></p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1><span class=MsoSubtleEmphasis><span style='color:white;font-style:normal'>My
+Events</span></span></h1>
+
+</div>
+
+<p class=MsoNormal><span class=MsoSubtleEmphasis><span style='color:windowtext;
+font-style:normal'>Documentation is still a work in progress.</span></span></p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1><span class=MsoSubtleEmphasis><span style='color:white;font-style:normal'>Questions</span></span></h1>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+class=MsoSubtleEmphasis><span style='color:windowtext;font-style:normal'><img
+border=0 width=623 height=314 id="Picture 28"
+src="Guide%20To%20The%20Hanvos_files/image027.png"></span></span></p>
+
+<p class=MsoNormal><span class=MsoSubtleEmphasis><span style='color:windowtext;
+font-style:normal'>Here you can ask questions that will be answered by admin
+users. Click Create New to ask a new question. Responded questions will be
+displayed in Answered Questions. Click on a question there to see the response.</span></span></p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1><span class=MsoSubtleEmphasis><span style='color:white;font-style:normal'>Bug
+Reports</span></span></h1>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=623 height=361 id="Picture 29"
+src="Guide%20To%20The%20Hanvos_files/image028.png"></p>
+
+<p class=MsoNormal>Submit bug reports here! We would greatly appreciate if
+everyone submits a bug report if they encounter one. Please make sure that your
+submission is as descriptive as possible, and try to include screenshots in the
+files section.</p>
+
+<div style='border:solid #4472C4 3.0pt;padding:0in 0in 0in 0in;background:#4472C4'>
+
+<h1><span class=MsoSubtleEmphasis><span style='color:white;font-style:normal'>Rules</span></span></h1>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=625 height=288 id="Picture 30"
+src="Guide%20To%20The%20Hanvos_files/image029.png"></p>
+
+<p class=MsoNormal>Here you will find files and important documents.</p>
+
+</div>
+
+<div><br clear=all>
+
+<hr align=left size=1 width="33%">
+
+<div id=ftn1>
+
+<p class=MsoFootnoteText><a href="#_ftnref1" name="_ftn1" title=""><span
+class=MsoFootnoteReference><span class=MsoFootnoteReference><span
+style='font-size:10.0pt;line-height:115%;font-family:"Calibri",sans-serif'>[1]</span></span></span></a>
+For example, don’t accidentally delete someone’s task!</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
