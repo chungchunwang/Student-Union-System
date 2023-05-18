@@ -162,7 +162,28 @@ docker-compose up -d
 cd ~ #go to home directory
 mkdir budibase
 cd budibase
-budi hosting --init
+cat <<EOT >> ./docker-compose.yaml
+version: "3"
+services:
+  budibase:
+    restart: unless-stopped
+    image: budibase/budibase:v2.2.23
+    ports:
+      - 10000:80
+    environment:
+      JWT_SECRET: $(openssl rand -base64 12)
+      MINIO_ACCESS_KEY: $(openssl rand -base64 12)
+      MINIO_SECRET_KEY: $(openssl rand -base64 12)
+      REDIS_PASSWORD: $(openssl rand -base64 12)
+      INTERNAL_API_KEY: $(openssl rand -base64 12)
+      COUCHDB_USER: admin
+      COUCHDB_PASSWORD: $(openssl rand -base64 12)
+    volumes:
+      - budibase_data:/data
+volumes:
+  budibase_data:
+    driver: local
+EOT
 budi hosting --start
 
 #setup SSL certificates
