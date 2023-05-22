@@ -4,11 +4,8 @@ This is the public repository for the Student Union System, an internal manageme
 As the heartbeat of any educational institution, the Student Union plays a crucial role in fostering a vibrant campus community and addressing the needs and aspirations of students. To effectively manage the multitude of activities and operations within the Student Union, a well-designed Internal Management System is indispensable.
 
 
-# How To Setup
+# Setup and User Manual
 [Go here](./setup/README.md) to view setup instructions.
-
-# User Documentation
-Please reference the [docs](./docs/publish/v2.0.0.pdf).
 
 # License
 Budibase export and documentation is under the [MIT License](./LICENSE).
