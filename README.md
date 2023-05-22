@@ -5,7 +5,7 @@ As the heartbeat of any educational institution, the Student Union plays a cruci
 
 
 # Setup and User Manual
-[Go here](./setup/README.md) to view setup instructions.
+[Go here](./docs/README.md) to find setup instructions and the user manual.
 
 # License
 Budibase export and documentation is under the [MIT License](./LICENSE).
