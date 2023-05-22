@@ -42,7 +42,7 @@ Once you have purchased a cloud server and a domain, you will need to access its
 
 Download the setup script using the following line.
 ```console
-curl -o setup.sh https://raw.githubusercontent.com/chungchunwang/Student-Union-System/main/setup/setup.sh 
+curl -o setup.sh https://raw.githubusercontent.com/chungchunwang/Student-Union-System/main/app/scripts/setup.sh 
 ```
 Execute the setup script using the following. Make sure to follow the on screen instructions.
 ```console
@@ -73,7 +73,7 @@ Navigate to the `Global_Variables` table, and click the rightmost button to view
 If you access your domain at the port you provided during the setup process, you should see a running, blank Budibase instance. Follow the onscreen instructions to setup an admin account. Once you log in, it will make you generate a new Budibase app. Follow along until you are able to quit this tour. We will not need to build an app from scratch, we just have to load in the saved app file.
 
 #### Install App
-Go to https://github.com/chungchunwang/Student-Union-System/tree/main/app/exports and download the latest version of the app. On the dashboard, click `Create new app`, and then `Import app`. Here, give the app a name and then import the file. It is recommended that you give the app the same name as the database.
+Go to https://github.com/chungchunwang/Student-Union-System/tree/main/app/budibase/exports and download the latest version of the app. On the dashboard, click `Create new app`, and then `Import app`. Here, give the app a name and then import the file. It is recommended that you give the app the same name as the database.
 
 After you have logged in, change the configuration for MySQL to have `Host` be your domain name and `Password` be the password you set for MySQL during the setup process. Set `Database` to be the name of your schema. Save your configuration.
 
