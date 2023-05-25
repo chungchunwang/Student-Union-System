@@ -105,6 +105,13 @@ Then, click `Manage` on your app, and select the `Access` tab. Add the users you
 
 This can be rather tedious if you have a lot of users, however you will only have to do it once a year! Unfortunately an easier method has been paywalled by Budibase.
 
+#### Configure App
+##### Groups
+Go to the Groups section of the MySQL database inside the Data tab of the Budibase app. Here, add all of the different groups that are present in your school. You can save this to a csv and upload it for successive years.
+
+#### Bug Report
+Go to the Design tab, and view the page for the Bug Report. Click on the Bug Report button component, and change action it triggers to go to a particular page you want bug reports to your system to be reported. If you think this is unnecessary, just delete this page.
+
 ## Managing the System Over Many Years
 The app is designed to work over a particular school year. Over multiple school years, it is recommended that you maintain the Budibase app and MySQL schema for past school years, but set the MySQL schema to read only. This can be done as outlined [here](https://stackoverflow.com/a/18401612).
 
