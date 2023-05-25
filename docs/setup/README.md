@@ -61,7 +61,7 @@ First, install MySQL Workbench at https://dev.mysql.com/downloads/workbench/. Co
 > 6. Click on the "Test Connection" button to test the connection to the MySQL server. If the connection is successful, click on the "OK" button to save the connection.
 > 7. Once you have saved the connection, you can double-click on it in the "MySQL Connections" section to connect to the MySQL server.
 
-Download the base MySQL setup for Budibase [here](./base.sql).
+Download the base MySQL setup for Budibase [here](../../app/scripts/setup.sh).
 
 Click `Server->Data Import`, and select `Import from Self-Contained File`. Next to `Default Target Schema`, select `New` and input the name of the schema (database) you wish to create. It is recommended convention that you name the schema after the particular school year this system is for. Thus, you can have multiple copies of the database for different years. Select the setup file you downloaded. To begin the import, click the `Start` button at the bottom of the page.
 
@@ -83,7 +83,7 @@ Exit the app and return to the dashboard. We will now configure the global Budib
 ##### Email
 Go to `Email`, and configure the SMTP settings for an email address for the system to send automated emails with. You may have to create a free online email for this step, or contact your school administrator to obtain another school email.
 
-Below you can set email templates. You can use the defaults there. Slightly modified versions of the defaults that are recommended can be found [here](./templates/);
+Below you can set email templates. You can use the defaults there. Slightly modified versions of the defaults that are recommended can be found [here](../../app/email-templates/);
 
 ##### Organization
 Go to `Organization`, and input the name of your student union. Also upload its logo. Add the URL of your site to `Platform URL`. Make sure to include the port if necessary (eg. example.com:100). Save your changes.
