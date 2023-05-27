@@ -70,15 +70,10 @@ Navigate to the `Global_Variables` table, and click the rightmost button to view
 ![Image of Global Variables table](./assets/Global_Variables_Screenshot.png)
 
 ### Budibase
-If you access your domain at the port you provided during the setup process, you should see a running, blank Budibase instance. Follow the onscreen instructions to setup an admin account. Once you log in, it will make you generate a new Budibase app. Follow along until you are able to quit this tour. We will not need to build an app from scratch, we just have to load in the saved app file.
-
-#### Install App
-Go to https://github.com/chungchunwang/Student-Union-System/tree/main/app/budibase/exports and download the latest version of the app. On the dashboard, click `Create new app`, and then `Import app`. Here, give the app a name and then import the file. It is recommended that you give the app the same name as the database.
-
-After you have logged in, change the configuration for MySQL to have `Host` be your domain name and `Password` be the password you set for MySQL during the setup process. Set `Database` to be the name of your schema. Save your configuration.
+If you access your domain at the port you provided during the setup process, you should see a running, blank Budibase instance. Follow the onscreen instructions to setup an admin account. We will not need to build an app from scratch, we just have to load in the saved app file.
 
 #### Configure Budibase
-Exit the app and return to the dashboard. We will now configure the global Budibase settings.
+Go to the dashboard. We will now configure the global Budibase settings.
 
 ##### Email
 Go to `Email`, and configure the SMTP settings for an email address for the system to send automated emails with. You may have to create a free online email for this step, or contact your school administrator to obtain another school email.
@@ -98,16 +93,22 @@ Go to `Plugins`, and click add plugin. Choose `URL` as the source, and add the f
 - https://github.com/aptkingston/budibase-comment-box/releases/download/v1.0.2/comment-box-1.0.2.tar.gz
 - https://github.com/chungchunwang/Budibase-QR-Code-Scanner/releases/download/v1.0.2/QR-Code-Scanner-1.0.2.tar.gz
 
+
+#### Install App
+Go to https://github.com/chungchunwang/Student-Union-System/tree/main/app/budibase/exports and download the latest version of the app. On the dashboard, click `Create new app`, and then `Import app`. Here, give the app a name and then import the file. It is recommended that you give the app the same name as the database.
+
+After you have logged in, change the configuration for MySQL to have `Host` be your domain name and `Password` be the password you set for MySQL during the setup process. Set `Database` to be the name of your schema. Save your configuration.
+
 #### Import Users
-Click on the Users tab, and import the emails of the people you wish to invite to the system. You can make use of a CSV file. Make sure to set regular users as `App User`, not `Dev` or `Admin`.
+On the dashboard, click on the Users tab, and import the emails of the people you wish to invite to the system. You can make use of a CSV file. Make sure to set regular users as `App User`, not `Dev` or `Admin`.
 
 Then, click `Manage` on your app, and select the `Access` tab. Add the users you imported into you app. You will have to specify their level of access between either `Admin`, `Power`, and `Basic`. Consult the user documentation for the Student Union System for more information about what each of these categories entails.
 
-This can be rather tedious if you have a lot of users, however you will only have to do it once a year! Unfortunately an easier method has been paywalled by Budibase.
+This can be rather tedious if you have a lot of users, however you will only have to do it once a year! Unfortunately an easier method is a paid feature of Budibase. Alternately you can try to setup an automatic script to do this with the Budibase API, though you will have to figure that one out for yourself.
 
 #### Configure App
 ##### Groups
-Go to the Groups section of the MySQL database inside the Data tab of the Budibase app. Here, add all of the different groups that are present in your school. You can save this to a csv and upload it for successive years.
+Go to the Groups section of the MySQL database inside the Data tab of the Budibase app. Here, add all of the different groups that are present in your school. You can save this to a csv and upload it for successive years. [A recommended system of groups used here at Hanvos-Kent can be found here.](../../app/groups/export.csv)
 
 #### Bug Report
 Go to the Design tab, and view the page for the Bug Report. Click on the Bug Report button component, and change action it triggers to go to a particular page you want bug reports to your system to be reported. If you think this is unnecessary, just delete this page.
