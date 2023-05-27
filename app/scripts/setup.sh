@@ -167,7 +167,7 @@ version: "3"
 services:
   budibase:
     restart: unless-stopped
-    image: budibase/budibase:v2.2.23
+    image: budibase/budibase:v2.1.42
     ports:
       - 10000:80
     environment:
