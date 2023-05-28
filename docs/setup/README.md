@@ -113,7 +113,28 @@ Go to the Groups section of the MySQL database inside the Data tab of the Budiba
 #### Bug Report
 Go to the Design tab, and view the page for the Bug Report. Click on the Bug Report button component, and change action it triggers to go to a particular page you want bug reports to your system to be reported. If you think this is unnecessary, just delete this page.
 
-## Managing the System Over Many Years
-The app is designed to work over a particular school year. Over multiple school years, it is recommended that you maintain the Budibase app and MySQL schema for past school years, but set the MySQL schema to read only. This can be done as outlined [here](https://stackoverflow.com/a/18401612).
+#### Quick Fix For Budibase Bugs
+For some reason, the accordion plugin does not work properly when imported. To fix this, go to `/tasks/new/:group` in the design tab of the app, select the accordion component (inside the Users section), and toggle the default states to closed and then back to on. This seems to "wake the plugin up".
 
-To create a new app for a school year, follow the steps given above to create an new schema and app for the year. Note that you do not need to rerun the installation script - you can have multiple schemas in MySQL and multiple apps in Budibase.
+## Managing the System Over Many Years
+The app is designed to work over a particular school year. Over multiple school years, you will need to maintain a new version of the app as detailed in the instructions above (though you will not need to reset up Budibase and MySQL, just add a new app and schema respectively - thus, you DO NOT need to rerun the install script). For archivial purposes, it is recommended that you maintain the Budibase app and MySQL schema for past school years, but set the MySQL schema to read only. To do so, use the SQL command:
+```SQL
+ALTER Schema `SCHEMA NAME HERE` READ ONLY = 1;
+```
+
+## Migrating Servers
+If there is any reason that necessitates the movement of servers, you will need to migrate your MySQL schemas and Budibase apps over to the new server.
+
+Firstly, on the new server, run the setup script above to install Budibase and MySQL. Follow the later steps below that if you also need to setup a blank app for a new school year.
+
+### Migrating MySQL Schemas
+Just like we loaded a blank MySQL setup to install a blank app, we can also save our schemas to files that can be loaded onto a new server.
+
+In MySQL Workbench, connect to your original MySQL server, and go to `Server -> Data Export`. Select the schemas you wish to migrate, then select `Export to Self-Contained File`. At the bottom, check the `Include Create Schema` checkmark. This means that you will not need to rename each of the schemas as we did for the base schema above - it will import later with the name you have set. Click `Start Export` to begin the file export. 
+
+On the new server, go to `Server -> Data Import`. Select `Import from Self-Contained File`, and select the file you just generated in the step above. Then, click `Start Import`. 
+
+Now, your MySQL schemas should be moved to the new server.
+
+### Migrating Budibase apps
+Migrating Budibase apps is quite straightfoward. For each of the apps you wish to migrate, click on `Manage`, then the `...` button, then `Export Published`. This should download to your device a file that represents the app. On the new Budibase server, click `Create New App`, then `Import app`. Drag your exported file into the `File to import` section, and type in the name of your file.
