@@ -1,4 +1,7 @@
 # Student Union Internal Management System Setup
+
+[中文版本 | Chinese Version](./README-CN.md)
+
 Welcome to the guide for setting up the Student Union Internal Management System! 
 
 This comprehensive guide aims to assist Student Union leaders, administrators, and IT professionals in hosting a robust and user-friendly Internal Management System tailored to their specific requirements. By following the steps outlined here, you'll be able to streamline administrative processes, enhance communication and collaboration, and empower your Student Union to thrive.
